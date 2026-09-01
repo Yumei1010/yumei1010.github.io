@@ -1,17 +1,25 @@
 {
-    "title":"Yumei's Blog",
-    "subTitle":"记录生活、技术随想与一切有趣的事物。",
-    "homeUrl":"https://yumei1010.github.io",
-    "avatarUrl":"https://avatars.githubusercontent.com/u/161829284",
-    "faviconUrl":"https://avatars.githubusercontent.com/u/161829284",
-    "singlePage":["about","link"],
-    "email":"161829284+Yumei1010@users.noreply.github.com",
-    "startSite":"09/01/2025",
-    "onePageListNum":15,
-    "commentLabelColor":"#006b75",
-    "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
-    "i18n":"CN",
-    "nightTheme":"dark",
-    "bottomText":"❤️ 转载文章请注明出处，谢谢！❤️",
-    "GMEEK_VERSION":"last"
+    "title": "Yumei's Blog",
+    "subTitle": "记录生活、技术随想与一切有趣的事物。",
+    "homeUrl": "https://yumei1010.github.io",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/161829284",
+    "faviconUrl": "https://avatars.githubusercontent.com/u/161829284",
+    "singlePage": [
+        "about",
+        "link"
+    ],
+    "email": "161829284+Yumei1010@users.noreply.github.com",
+    "startSite": "09/01/2025",
+    "onePageListNum": 15,
+    "commentLabelColor": "#006b75",
+    "yearColorList": [
+        "#bc4c00",
+        "#0969da",
+        "#1f883d",
+        "#A333D0"
+    ],
+    "i18n": "CN",
+    "nightTheme": "dark",
+    "bottomText": "❤️ 转载文章请注明出处，谢谢！❤️",
+    "GMEEK_VERSION": "last"
 }
