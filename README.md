@@ -1,17 +1,25 @@
-## 【创建仓库】完成了
-请接着按照下面的步骤2和3进行操作，全部成功之后，本`README.md`文件会自动替换掉的哦！
+# Yumei's Blog
 
-### 安装
+个人博客，基于 [Gmeek](https://github.com/Meekdai/Gmeek) 搭建 —— 一个完全基于 GitHub Pages + Issues + Actions 的超轻量博客框架。
 
-1. 【创建仓库】点击[通过模板创建仓库](https://github.com/new?template_name=Gmeek-template&template_owner=Meekdai)，建议仓库名称为`XXX.github.io`，其中`XXX`为你的github用户名。
+- 🌐 博客地址：https://yumei1010.github.io
+- ✍️ 写作方式：直接在 [Issues](https://github.com/Yumei1010/YuMei.github.io/issues) 中发帖（需添加至少一个 Label）
+- ⚙️ 部署方式：GitHub Actions 自动构建，无需本地环境
 
-2. 【启用Pages】在本仓库的`Settings`中`Pages->Build and deployment->Source`下面选择`Github Actions`。
+## 写作指南
 
-3. 【开始写作】打开一篇issue，开始写作，并且**必须**添加一个`标签Label`（至少添加一个），再保存issue后会自动创建博客内容，片刻后可通过https://XXX.github.io 访问（可进入Actions页面查看构建进度）。
+1. 打开本仓库的 [Issues](https://github.com/Yumei1010/YuMei.github.io/issues) 页面，点击 **New issue**
+2. 标题即文章标题，正文支持 Markdown
+3. **必须添加至少一个 Label（标签）**，保存后会自动触发构建
+4. 片刻后访问 https://yumei1010.github.io 即可看到新文章
 
-4. 【手动全局生成】这个步骤只有在修改`config.json`文件或者出现奇怪问题的时候，需要执行。
-```
-通过Actions->build Gmeek->Run workflow->里面的按钮全局重新生成一次
-```
+### 常用 Label 约定
 
-### Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
+- `documentation` / `good first issue` / `help wanted` 等均可，任意自定义标签都会作为文章分类展示
+
+## 自定义
+
+- 修改 `config.json` 中的标题、副标题、头像等配置后，需在 Actions 页面手动执行一次 **build Gmeek → Run workflow**（全局重新生成）
+- 主题等高级自定义可参考 [Gmeek 文档](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)
+
+Powered by :heart: [Gmeek](https://github.com/Meekdai/Gmeek)
