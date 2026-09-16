@@ -19,3 +19,5 @@ pnpm-debug.log*
 
 # private config
 .env
+# pi 项目记忆（本机状态，不入库）
+.pi/
