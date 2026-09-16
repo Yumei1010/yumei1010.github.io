@@ -24,9 +24,12 @@ jobs:
         uses: actions/checkout@v7
       - name: Install, build, and upload your site
         uses: withastro/action@v6
-        env:
-          OAUTH_GITHUB_CLIENT_ID: ${{ secrets.OAUTH_GITHUB_CLIENT_ID }}
-          OAUTH_GITHUB_CLIENT_SECRET: ${{ secrets.OAUTH_GITHUB_CLIENT_SECRET }}
+        # 下面两个 OAuth 变量仅在 astro.config.mjs 里 decapCmsOauth({ enable: true }) 时才被使用。
+        # GitHub Pages 是纯静态托管、无法承载 OAuth 回调，因此当前保持关闭，构建无需注入这两个密钥。
+        # 将来若要启用 CMS 后台登录，需换到支持服务端的部署目标，并取消下面两行注释。
+        # env:
+        #   OAUTH_GITHUB_CLIENT_ID: ${{ secrets.OAUTH_GITHUB_CLIENT_ID }}
+        #   OAUTH_GITHUB_CLIENT_SECRET: ${{ secrets.OAUTH_GITHUB_CLIENT_SECRET }}
         # with:
           # path: . # The root location of your Astro project inside the repository. (optional)
           # node-version: 24 # The specific version of Node that should be used to build your site. Defaults to 24. (optional)
